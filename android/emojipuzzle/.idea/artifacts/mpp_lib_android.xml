@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mpp-lib-android">
+    <output-path>$PROJECT_DIR$/../../mpp-lib/build/libs</output-path>
+    <root id="archive" name="mpp-lib-android.jar" />
+  </artifact>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emojipuzzle.iml" filepath="$PROJECT_DIR$/emojipuzzle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_androidMain.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_androidMain.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_androidTest.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_androidTest.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonMain.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonMain.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonTest.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonTest.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_dependencies.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_dependencies.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosMain.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosMain.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosTest.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosTest.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_repositories.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_repositories.iml" group="mpp-lib" />
+    </modules>
+  </component>
+</project>
