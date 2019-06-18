@@ -2,8 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="domain_androidMain" target="1.6" />
-      <module name="domain_androidTest" target="1.6" />
       <module name="mpp-lib_androidMain" target="1.6" />
       <module name="mpp-lib_androidTest" target="1.6" />
     </bytecodeTargetLevel>

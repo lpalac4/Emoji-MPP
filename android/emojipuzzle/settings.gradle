@@ -2,3 +2,5 @@ include ':app'
 
 include 'mpp-lib'
 project(':mpp-lib').projectDir = new File('../../mpp-lib')
+
+enableFeaturePreview('GRADLE_METADATA')
