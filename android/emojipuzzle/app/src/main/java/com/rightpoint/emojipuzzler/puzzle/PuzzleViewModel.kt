@@ -2,14 +2,13 @@ package com.rightpoint.emojipuzzler.puzzle
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.rightpoint.domain.IDomainClient
 import com.rightpoint.domain.models.EmojiPuzzle
 import com.rightpoint.emojipuzzler.EmojiPuzzleApplication
 import kotlinx.coroutines.*
 
 class PuzzleViewModel: ViewModel() {
 
-    private var domain: IDomainClient = EmojiPuzzleApplication.domainClient
+    private var domain = EmojiPuzzleApplication.domainClient
 
     var puzzle: EmojiPuzzle? = null
 

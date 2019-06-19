@@ -3,7 +3,6 @@ package com.rightpoint.emojipuzzler
 import android.app.Application
 import androidx.emoji.bundled.BundledEmojiCompatConfig
 import androidx.emoji.text.EmojiCompat
-import com.rightpoint.domain.IDomainClient
 import com.rightpoint.domain.PuzzleDomainClient
 
 class EmojiPuzzleApplication: Application(){
@@ -16,6 +15,6 @@ class EmojiPuzzleApplication: Application(){
     }
 
     companion object {
-        val domainClient: IDomainClient = PuzzleDomainClient()
+        val domainClient = PuzzleDomainClient()
     }
 }
