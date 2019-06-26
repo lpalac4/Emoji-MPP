@@ -37,6 +37,9 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Emoji Puzzle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04d-Ub-ttS">
                                 <rect key="frame" x="115" y="396" width="145" height="20.333333333333314"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,6 +54,9 @@
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
                                         <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchDown" id="2WB-Sb-Irb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on start to load emoji puzzle." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sc-Dx-Zfh">
                                         <rect key="frame" x="0.0" y="38" width="262.66666666666669" height="20.333333333333329"/>
@@ -73,6 +79,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activeContainer" destination="i8N-kf-U80" id="kov-qy-kXH"/>
+                        <outlet property="emoji" destination="04d-Ub-ttS" id="kj0-o4-i6I"/>
+                        <outlet property="feedback" destination="19P-JB-O7c" id="evP-5f-2aQ"/>
+                        <outlet property="idleContainer" destination="0n5-ER-IMX" id="04H-wD-Ijp"/>
+                        <outlet property="input" destination="zWM-rz-VTi" id="Loc-bF-V4U"/>
+                        <outlet property="start" destination="oJd-Sl-J2O" id="mmb-sr-2XA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

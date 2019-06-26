@@ -2,13 +2,14 @@ package com.rightpoint.emojipuzzler.puzzle
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.rightpoint.domain.models.EmojiPuzzle
-import com.rightpoint.emojipuzzler.EmojiPuzzleApplication
-import kotlinx.coroutines.*
+import com.rightpoint.domain.IEmojiPuzzleView
+import com.rightpoint.domain.PuzzlePresenter
+import com.rightpoint.domain.emoji.EmojiPuzzle
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
 
-class PuzzleViewModel: ViewModel() {
-
-    private var domain = EmojiPuzzleApplication.domainClient
+class PuzzleViewModel: ViewModel(), IEmojiPuzzleView {
 
     var puzzle: EmojiPuzzle? = null
 
@@ -18,15 +19,17 @@ class PuzzleViewModel: ViewModel() {
 
     private val viewModelJob = Job()
     private val domainScope = CoroutineScope(Dispatchers.IO + viewModelJob)
+    private var presenter = PuzzlePresenter(mainThread = domainScope.coroutineContext, view = this)
+
+    override fun onEmojiSuccess(emojiPuzzle: EmojiPuzzle) {
+        puzzle = emojiPuzzle
+        currentEmojiPuzzle.postValue(puzzle?.currentEmoji?.message)
+        loading.postValue(false)
+    }
 
     fun startGame() {
         loading.value = true
-        domainScope.launch {
-            delay(4000)
-            puzzle = domain.getPuzzles()
-            currentEmojiPuzzle.postValue(puzzle?.currentEmoji?.message)
-            loading.postValue(false)
-        }
+        presenter.getPuzzles()
     }
 
     fun newEmoji() {
