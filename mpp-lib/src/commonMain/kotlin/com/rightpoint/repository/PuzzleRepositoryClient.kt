@@ -8,6 +8,7 @@ expect fun parseFileToPuzzleEntity(kClass: KClass<PuzzleEntity>, fileName: Strin
 class PuzzleRepositoryClient: IRepositoryClient {
 
     override suspend fun retrieveEmojiData(): PuzzleEntity {
+
         val obj = parseFileToPuzzleEntity(PuzzleEntity::class, "emojipuzzles.json")
         return obj
     }

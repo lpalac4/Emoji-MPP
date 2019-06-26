@@ -10,8 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonMain.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonMain.iml" group="mpp-lib" />
       <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonTest.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_commonTest.iml" group="mpp-lib" />
       <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_dependencies.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_dependencies.iml" group="mpp-lib" />
-      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosMain.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosMain.iml" group="mpp-lib" />
-      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosTest.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_iosTest.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_iOSMain.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_iOSMain.iml" group="mpp-lib" />
+      <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_iOSTest.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_iOSTest.iml" group="mpp-lib" />
       <module fileurl="file://$PROJECT_DIR$/../../mpp-lib/mpp-lib_repositories.iml" filepath="$PROJECT_DIR$/../../mpp-lib/mpp-lib_repositories.iml" group="mpp-lib" />
     </modules>
   </component>

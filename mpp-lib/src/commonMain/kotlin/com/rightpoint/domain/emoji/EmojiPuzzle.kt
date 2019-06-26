@@ -1,4 +1,4 @@
-package com.rightpoint.domain.models
+package com.rightpoint.domain.emoji
 
 import com.rightpoint.repository.models.PuzzleEntity
 
